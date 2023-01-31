@@ -48,7 +48,7 @@ while(True):
     gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 
     # do adaptive threshold on gray image
-    thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 101, 3)
+    thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 101, 3)
 
 
     
